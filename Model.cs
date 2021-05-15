@@ -85,15 +85,21 @@ namespace BotModel
             }
             else 
             {
-                    regexPattern = new Regex("^[^\\s] [^\\s]+$");
-                    if (!regexPattern.IsMatch(message))
+                    regexPattern = new Regex(@"^[^\s]+\s+[^\s]+$");
+                    if (regexPattern.IsMatch(message))
                     {
                         string[] authData = message.Split(' ');
                         string authUserName = authData[0];
                         string authUserPassword = authData[1];
                         if (CheckAuthentificationData(authUserName, authUserPassword))
                         {
+                            botClient.SendTextMessageAsync(
+                                     chatId: userInfo.ChatId,
+                                     text: $"Log in successfully. Great! Now you can use bot's commands. Type /help to get all commands list",
+                                     replyToMessageId: userInfo.MessageId);
 
+                                activeUser.State = UserStates.Authorized;
+                            
                         }
                         else
                         {
@@ -104,7 +110,7 @@ namespace BotModel
                     {
                         botClient.SendTextMessageAsync(
                             chatId: userInfo.ChatId,
-                            text: $"You entered not a valid authentication data. Please repeat input your login and password through the space",
+                            text: $"You entered not the valid authentification data. Repeat , please. Input your login and password through the space",
                              replyToMessageId: userInfo.MessageId);
 
                     }
@@ -118,7 +124,7 @@ namespace BotModel
 
         private static bool CheckAuthentificationData(string authUserName, string authUserPassword)
         {
-           
+            return true;
         }
 
         private static void CommandHandler(BotUser activeUser, string msgText)
