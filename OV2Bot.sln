@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OV2Bot", "OV2Bot.csproj", "{372A80F8-C08E-46B9-AC25-EA1694331503}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{372A80F8-C08E-46B9-AC25-EA1694331503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372A80F8-C08E-46B9-AC25-EA1694331503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372A80F8-C08E-46B9-AC25-EA1694331503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372A80F8-C08E-46B9-AC25-EA1694331503}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8CBE61E-831B-4810-9284-9654A134C28C}
+	EndGlobalSection
+EndGlobal
