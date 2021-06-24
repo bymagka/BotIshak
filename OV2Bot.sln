@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OV2Bot", "OV2Bot.csproj", "{372A80F8-C08E-46B9-AC25-EA1694331503}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{D9C31343-6A93-4133-8703-13FFB31A514B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Management", "Management", "{DE72C13B-BECB-41A9-8636-F20EB692D3CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "..\WpfApp\WpfApp.csproj", "{64A15126-57A7-4690-BC8D-DB8AD500921B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +21,17 @@ Global
 		{372A80F8-C08E-46B9-AC25-EA1694331503}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{372A80F8-C08E-46B9-AC25-EA1694331503}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{372A80F8-C08E-46B9-AC25-EA1694331503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A15126-57A7-4690-BC8D-DB8AD500921B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A15126-57A7-4690-BC8D-DB8AD500921B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A15126-57A7-4690-BC8D-DB8AD500921B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A15126-57A7-4690-BC8D-DB8AD500921B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{372A80F8-C08E-46B9-AC25-EA1694331503} = {D9C31343-6A93-4133-8703-13FFB31A514B}
+		{64A15126-57A7-4690-BC8D-DB8AD500921B} = {DE72C13B-BECB-41A9-8636-F20EB692D3CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F8CBE61E-831B-4810-9284-9654A134C28C}
