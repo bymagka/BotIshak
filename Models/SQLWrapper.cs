@@ -11,8 +11,9 @@ namespace BotSQLWrapper
     public static class SQLWrapper
     {
         static SqlDataAdapter dataAdapter = new SqlDataAdapter();
-        
-        static string database = @"Server=WIN-9PP8GDINMAP;Database=Users;User Id = admin; Password=1C,e[extn;";
+
+        //static string database = @"Server=WIN-9PP8GDINMAP;Database=Users;User Id = admin; Password=1C,e[extn;";
+        static string database = @"Data Source=DESKTOP-A4S5T9U\SQLEXPRESS;Initial Catalog=Users;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public static bool CheckAuthorizationData(string userName, string password)
         {
