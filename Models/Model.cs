@@ -26,7 +26,7 @@ namespace BotModel
     {
         public static DateTime startTime { get; set; }
         static Regex regexPattern { get; set; }
-        static string serverAddress { get; } = @"Srvr=""slocalhost:1841"";Ref="; 
+        static string serverAddress { get; } = @"Srvr=""localhost:1841"";Ref="; 
 
         public static OV2BotClient botClient { get; set; }
 
