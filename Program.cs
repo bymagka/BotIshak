@@ -16,7 +16,7 @@ namespace OV2Bot
         static void Main(string[] args)
         {
             Console.WriteLine("Change from test_2 branch");
-
+            Console.WriteLine("I should take this change from test_1_branch");
             Console.ReadLine();
             //string token = "1053504808:AAFK_U57vMVSMF69RTdrHmaVz8-7wbV3gNo";
             //OV2BotClient OV2Bot = new OV2BotClient(token);
