@@ -16,6 +16,7 @@ namespace OV2Bot
         static void Main(string[] args)
         {
             Console.WriteLine("I should take this change from test_1_branch");
+            Console.WriteLine("I shouldn't take this change from test_1_branch");
 
             Console.ReadLine();
 
